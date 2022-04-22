@@ -1,0 +1,21 @@
+{
+  "name": "m-g-annotation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o main",
+    "post": "ncc build post.js -o dist --license licenses.txt",
+    "all": "npm run lint && npm run prepare && npm run post"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "eslint": "^7.4.0"
+  }
+}

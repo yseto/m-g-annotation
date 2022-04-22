@@ -1,0 +1,17 @@
+name: 'm-g-annotation'
+description: 'm-g-annotation'
+inputs:
+  title:
+    description: title
+    required: true
+  service:
+    description: service
+    required: true
+  apikey:
+    description: apikey
+    required: true
+runs:
+  using: 'node12'
+  main: 'main/index.js'
+  post: 'dist/index.js'
+
